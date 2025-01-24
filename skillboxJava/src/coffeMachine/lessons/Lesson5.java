@@ -5,6 +5,7 @@ import myFeatures.Printer;
 public class Lesson5 {
     public static void run() {
         Printer.printLessonNumber(5, 2);
+        Printer.printLessonName("Преоритеты и скобки в условиях");
         Printer.printTaskNumber(1);
         task1();
         System.out.println();

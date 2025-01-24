@@ -5,6 +5,7 @@ import myFeatures.Printer;
 public class Lesson6 {
     public static void run() {
         Printer.printLessonNumber(6, 2);
+        Printer.printLessonName("Вложенные условия");
         Printer.printTaskNumber(1);
         task1();
         System.out.println();
@@ -13,7 +14,8 @@ public class Lesson6 {
         System.out.println();
         Printer.printTaskNumber(3);
         task3();
-        System.out.println();
+        Printer.printDescription("Избегаем большой вложенности условных операторов, а также слишком больших условий - " +
+                "для лучшей читаемости кода");
     }
 
     public static void task1() {

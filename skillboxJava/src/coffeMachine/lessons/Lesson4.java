@@ -5,6 +5,7 @@ import myFeatures.Printer;
 public class Lesson4 {
     public static void run() {
         Printer.printLessonNumber(4, 2);
+        Printer.printLessonName("Булевы операции");
         Printer.printTaskNumber(1);
         task1();
         System.out.println();

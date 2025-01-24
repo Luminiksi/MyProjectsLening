@@ -22,6 +22,10 @@ public class Printer {
         System.out.println(ANSI_CYAN + "____ " + getStringLessonNumber(number, module) + " ____" + ANSI_RESET);
     }
 
+    public static void printLessonName(String name) {
+        System.out.println(ANSI_CYAN + name + ANSI_RESET);
+    }
+
     public static void printTaskNumber(int number) {
         System.out.println(ANSI_YELLOW + "<----------- " + getStringTaskNumber(number) + " ----------->" + ANSI_RESET);
     }
