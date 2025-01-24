@@ -5,7 +5,7 @@ import java.util.Properties;
 import java.util.Scanner;
 
 public class TasksPart1 {
-    public static final String LESSON_PROP = "lesson_2/lesson_1.properties";
+    public static final String LESSON_PROP = "lesson_1.properties";
 
     public static void main(String[] args) throws IOException {
         /*System.out.println("Task 1:");
@@ -29,7 +29,6 @@ public class TasksPart1 {
 
 
         Properties properties = new Properties();
-        System.out.println(properties.getClass());
         properties.load(new FileReader(LESSON_PROP));
         String name = properties.getProperty("name");
         System.out.println(name);
