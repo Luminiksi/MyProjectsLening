@@ -1,4 +1,4 @@
-package Demo.Lessons;
+package demo.Lessons;
 
 import myFeatures.Printer;
 

@@ -1,6 +1,6 @@
-package Demo;
+package demo;
 
-import Demo.Lessons.Lesson7;
+import demo.Lessons.Lesson7;
 
 public class Main {
     public static void main(String[] args) {
