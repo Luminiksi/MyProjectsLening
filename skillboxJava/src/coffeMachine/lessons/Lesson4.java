@@ -1,9 +1,9 @@
-package CoffeMachine;
+package coffeMachine.lessons;
 
 import myFeatures.Printer;
 
-public class Main {
-    public static void main(String[] args) {
+public class Lesson4 {
+    public static void run() {
         Printer.printLessonNumber(4, 2);
         Printer.printTaskNumber(1);
         task1();
@@ -75,7 +75,7 @@ public class Main {
         boolean isBlocked = true;
 
         if (!isBlocked && milkAmount >= cappucinoMilkRequired &&
-            coffeeAmount >= cappucinoCoffeeRequired) {
+                coffeeAmount >= cappucinoCoffeeRequired) {
             System.out.println("Готовим кофе");
         } else {
             System.out.println("Кофе-машина заблокирована");
