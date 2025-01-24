@@ -68,7 +68,6 @@ public class Lesson5 {
                 skimmedMilkAmount >= cappucinoMilkRequired;
         boolean coffeIsEnogh = coffeeAmount >= cappucinoCoffeeRequired;
 
-//        Что если такое условие, посмотрим на булевых(ниже
         if (!isBlocked && coffeIsEnogh && milkIsEnough) {
             System.out.println("Готовим кофе");
         } else {
