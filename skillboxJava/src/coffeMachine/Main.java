@@ -1,8 +1,6 @@
 package coffeMachine;
 
-import coffeMachine.lessons.Lesson5;
-import coffeMachine.lessons.Lesson4;
-import coffeMachine.lessons.Lesson6;
+import coffeMachine.lessons.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,5 +11,8 @@ public class Main {
         System.out.println();
         System.out.println();
         Lesson6.run();
+        System.out.println();
+        System.out.println();
+        Lesson8.run();
     }
 }
