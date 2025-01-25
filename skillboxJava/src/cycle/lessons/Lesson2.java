@@ -38,7 +38,6 @@ public class Lesson2 {
         Printer.printTaskNumber(11);
         task11();
         System.out.println();
-
     }
 
     public static void task1() {
