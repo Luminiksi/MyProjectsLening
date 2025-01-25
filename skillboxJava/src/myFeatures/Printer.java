@@ -47,7 +47,7 @@ public class Printer {
     }
 
     public static void printPracticeInfo() {
-        System.out.println("Практика по данному уроку(взято из описания урока, что ниже");
+        System.out.println(ANSI_PURPLE_BACKGROUND + ANSI_BLACK + "Практика по данному уроку(взято из описания урока, что ниже)" + ANSI_RESET);
     }
 
     public static void printAttemptNumber(int number) {
