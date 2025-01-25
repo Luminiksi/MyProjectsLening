@@ -1,8 +1,8 @@
-package hometasks.practics.part3.lesson2;
+package hometasks.practics.part3.lessons;
 
 import myFeatures.Printer;
 
-public class Task1 {
+public class Lesson2 {
     public static void run() {
         Printer.printLessonNumber(3, 2);
         Printer.printPracticeInfo();

@@ -1,4 +1,4 @@
-package cycle.lesson2;
+package cycle.lessons;
 
 import myFeatures.Printer;
 
