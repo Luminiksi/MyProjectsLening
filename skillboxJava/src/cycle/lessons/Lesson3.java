@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Lesson3 {
     public static void run() {
-        Printer.printLessonNumber(2, 3);
+        Printer.printLessonNumber(3, 3);
         Printer.printLessonName("Циклы “while” и “do while”");
         Printer.printTaskNumber(2);
         task2();

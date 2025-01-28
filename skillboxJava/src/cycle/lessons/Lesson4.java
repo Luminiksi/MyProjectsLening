@@ -4,7 +4,7 @@ import myFeatures.Printer;
 
 public class Lesson4 {
     public static void run() {
-        Printer.printLessonNumber(2, 3);
+        Printer.printLessonNumber(4, 3);
         Printer.printLessonName("Операторы “break” и “continue”");
         Printer.printTaskNumber(1);
         task1();
