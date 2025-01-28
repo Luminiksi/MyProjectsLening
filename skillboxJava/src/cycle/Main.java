@@ -14,5 +14,8 @@ public class Main {
         System.out.println();
         System.out.println();
         Lesson5.run();
+        System.out.println();
+        System.out.println();
+        Lesson6.run();
     }
 }
