@@ -53,4 +53,8 @@ public class Printer {
     public static void printAttemptNumber(int number) {
         System.out.println(ANSI_CYAN_BACKGROUND + ANSI_BLACK + "> > > Attempt number - " + number + ANSI_RESET);
     }
+
+    public static void printSeparator() {
+        System.out.println(ANSI_RED + "---------------------------------------------------------------> "  + ANSI_RESET);
+    }
 }
