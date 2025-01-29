@@ -1,11 +1,31 @@
 package internetShop;
 
 public class Basket {
-    public String items = "";
-    public int totalPrice = 0;
+    private String items = "";
+    private int totalPrice = 0;
+    private int limit;
+
+    public Basket() {
+        items = "Список товаров:";
+        this.limit = 10000;
+    }
+
+    public Basket(int limit) {
+        this();
+        this.limit = limit;
+    }
+
+    public Basket(String items, int totalPrice) {
+        this();
+        this.totalPrice = totalPrice;
+        this.items += items;
+    }
 
     public void add(String name, int price) {
         if (contains(name)) {
+            return;
+        }
+        if (totalPrice + price >= limit) {
             return;
         }
         items = items + "\n" + name + " - " + price;
@@ -25,7 +45,7 @@ public class Basket {
         return (items.contains(name));
     }
 
-    public void print(String title){
+    public void print(String title) {
         System.out.println(title);
         if (items.isEmpty()) {
             System.out.println("Корзина пуста");
