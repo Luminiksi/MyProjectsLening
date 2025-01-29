@@ -1,4 +1,4 @@
-package hometasks.lesson5;
+package hometasks.practics.part5;
 
 public class ChildBankAccount {
     private double balance;
