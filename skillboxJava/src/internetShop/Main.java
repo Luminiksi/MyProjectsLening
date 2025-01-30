@@ -2,9 +2,13 @@ package internetShop;
 
 public class Main {
     public static void main(String[] args) {
-        Basket  basket = new Basket("товары", 234231);
+        createBasket();
         Session session = new Session();
-        System.out.println(Basket.count);
+        System.out.println(Basket.getCount());
+    }
+
+    public static void createBasket() {
+        Basket  basket = new Basket("товары", 234231);
     }
 
     public static void oldTasks() {

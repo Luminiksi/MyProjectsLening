@@ -5,10 +5,10 @@ public class Basket {
     private int totalPrice = 0;
     private int limit;
 
-    public static int count = 0;
+    private static int count = 0;
 
     public Basket() {
-        count++;
+        increaseCount(1);
         items = "Список товаров:";
         this.limit = 10000;
     }
@@ -22,6 +22,13 @@ public class Basket {
         this();
         this.totalPrice = totalPrice;
         this.items += items;
+    }
+
+    public static int getCount() {
+        return count;
+    }
+    public static void increaseCount(int count) {
+        Basket.count += count;
     }
 
     public void add(String name, int price) {
