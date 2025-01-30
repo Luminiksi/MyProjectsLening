@@ -1,4 +1,4 @@
-package hometasks;
+package hometasks.lesson1;
 
 public class Booleans {
     public static void main(String[] args) {

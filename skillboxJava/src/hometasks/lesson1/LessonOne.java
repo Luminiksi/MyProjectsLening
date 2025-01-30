@@ -1,4 +1,4 @@
-package hometasks;
+package hometasks.lesson1;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

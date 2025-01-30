@@ -1,4 +1,4 @@
-package hometasks;
+package hometasks.lesson1;
 
 public class SwimmingPool {
     public static void main(String[] args) {
