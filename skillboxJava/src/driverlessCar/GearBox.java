@@ -8,7 +8,19 @@ public class GearBox {
      */
     public static final int MIN_GEAR = 1;
     public static final int MAX_GEAR = 6;
+
     private int gear = 0;
+
+    public final int type;
+
+    public static final int TYPE_AUTOMATIC = 1;
+    public static final int TYPE_MANUAL = 2;
+    public static final int TYPE_ROBOT = 3;
+    public static final int TYPE_VARIATOR = 4;
+
+    public GearBox(int type) {
+        this.type = type;
+    }
 
     public void shiftUp() {
         gear = gear < MAX_GEAR ? gear + 1 : gear;
@@ -28,5 +40,9 @@ public class GearBox {
 
     public int getCurrentGear() {
         return gear;
+    }
+
+    public int getType() {
+        return type;
     }
 }
