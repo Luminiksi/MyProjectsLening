@@ -11,14 +11,9 @@ public class GearBox {
 
     private int gear = 0;
 
-    public final int type;
+    public final GearBoxType type;
 
-    public static final int TYPE_AUTOMATIC = 1;
-    public static final int TYPE_MANUAL = 2;
-    public static final int TYPE_ROBOT = 3;
-    public static final int TYPE_VARIATOR = 4;
-
-    public GearBox(int type) {
+    public GearBox(GearBoxType type) {
         this.type = type;
     }
 
@@ -42,7 +37,7 @@ public class GearBox {
         return gear;
     }
 
-    public int getType() {
+    public GearBoxType getType() {
         return type;
     }
 }
