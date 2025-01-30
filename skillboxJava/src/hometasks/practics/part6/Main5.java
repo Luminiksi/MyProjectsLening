@@ -2,7 +2,7 @@ package hometasks.practics.part6;
 
 import myFeatures.Printer;
 
-public class Main6 {
+public class Main5 {
     public static void main(String[] args) {
         Printer.printLessonNumber(6,6);
         Printer.printTaskNumber(1);
