@@ -1,11 +1,40 @@
 package internetShop;
 
+import java.time.Period;
+
 public class Basket {
     private String items = "";
     private int totalPrice = 0;
     private int limit;
 
     private static int count = 0;
+
+    private static int timeout = getTimeOut() ;
+
+    private static int getTimeOut() {
+//        отрабатывают один раз в первую инициализацию
+        int secondsInHour = 3600;
+        int hoursInDay = 24;
+        int daysInWeek = 7;
+        int daysInMonth = 30;
+        return secondsInHour * hoursInDay * daysInWeek;
+//        пример сложной инициализации
+/*        return secondsInHour * hoursInDay *
+                (Period.type == PeriodType.WEEK ? daysInWeek : daysInMonth);*/
+    }
+
+/*    static {
+//        отрабатывают один раз в первую инициализацию
+//        но такое очень редко сейчас используют, ччаще используют пример выше
+        int secondsInHour = 3600;
+        int hoursInDay = 24;
+        int daysInWeek = 7;
+        int daysInMonth = 30;
+        timeout = secondsInHour * hoursInDay * daysInWeek;
+//        пример сложной инициализации
+*//*        timeOut = secondsInHour * hoursInDay *
+                (Period.type == PeriodType.WEEK ? daysInWeek : daysInMonth);*//*
+    }*/
 
     public Basket() {
         increaseCount(1);
