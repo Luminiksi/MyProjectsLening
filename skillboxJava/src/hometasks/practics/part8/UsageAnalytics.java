@@ -8,8 +8,7 @@ public class UsageAnalytics {
     }
 
     public int countVisit() {
-        return visitsCount++;
+        return ++visitsCount;
     }
-
 
 }
