@@ -46,6 +46,10 @@ public class Printer {
         System.out.println(ANSI_RED + "-> " + ANSI_RESET + name + ANSI_RED + " -----> " + ANSI_GREEN + result + ANSI_RESET);
     }
 
+    public static void printException(String exp) {
+        System.out.println(ANSI_RED + exp + ANSI_RESET);
+    }
+
     public static void printPracticeInfo() {
         System.out.println(ANSI_PURPLE_BACKGROUND + ANSI_BLACK + "Практика по данному уроку(взято из описания урока, что ниже)" + ANSI_RESET);
     }
