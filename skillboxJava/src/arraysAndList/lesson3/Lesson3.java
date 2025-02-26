@@ -14,9 +14,6 @@ public class Lesson3 {
         System.out.println();
         Printer.printTaskNumber(3);
         task3();
-        System.out.println();
-        Printer.printTaskNumber(4);
-        task1();
 
         System.out.println();
         System.out.println();

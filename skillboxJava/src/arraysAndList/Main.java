@@ -7,5 +7,6 @@ public class Main {
         Lesson1.run();
         Lesson2.run();
         Lesson3.run();
+        Lesson4.run();
     }
 }
