@@ -11,7 +11,17 @@ public class TwoDimensionalArray {
         // [X,  , X]
         // [ , X,  ]
         // [X,  , X]
+        char[][] array = new char[size][size];
+        for (int row = 0; row < array.length; row++) {
+            for (int cell = 0; cell < array[row].length; cell++) {
+                if (row == cell || row == array.length - 1 - cell) {
+                    array[row][cell] = 'X';
+                } else {
+                    array[row][cell] = ' ';
+                }
+            }
+        }
 
-        return new char[0][0];
+        return array;
     }
 }
