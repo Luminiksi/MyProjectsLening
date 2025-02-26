@@ -1,3 +1,10 @@
 !/stepikPracticum/target/
 !/out/
-!/.idea/
+# игнорировать все файлы с расширением .class
+*.class
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
