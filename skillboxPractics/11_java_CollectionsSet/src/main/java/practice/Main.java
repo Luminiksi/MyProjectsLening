@@ -1,3 +1,5 @@
+package practice;
+
 import java.util.Scanner;
 
 public class Main {
@@ -19,6 +21,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        EmailList emailList = new EmailList();
 
         while (true) {
             String input = scanner.nextLine();
@@ -27,7 +30,26 @@ public class Main {
             }
 
             //TODO: write code here
-
+            String[] command = input.trim().split("\s");
+            switch (command[0]) {
+                case "ADD" -> add(emailList, command);
+                case "LIST" -> list(emailList);
+                default -> System.out.println("Неясная команда");
+            }
         }
+    }
+
+    public static void list(EmailList emailList) {
+        for (String email : emailList.getSortedEmails()) {
+            System.out.println(email);
+        }
+    }
+
+    public static void add(EmailList emailList, String[] command) {
+        if (command.length < 2) {
+            System.out.println("Вы не ввели email для добавления");
+            return;
+        }
+        emailList.add(command[1]);
     }
 }
