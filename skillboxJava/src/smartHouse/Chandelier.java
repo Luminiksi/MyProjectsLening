@@ -1,6 +1,6 @@
 package smartHouse;
 
-public class Chandelier extends LightingDevice{
+public class Chandelier extends LightingDevice {
 
     private static final int LAMP_BRIGHTNESS_STEEPS = 2;
     private static final double CONSUMPTION_COEFF = 1.095;
