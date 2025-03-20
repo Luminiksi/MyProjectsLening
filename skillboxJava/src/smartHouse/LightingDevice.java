@@ -40,6 +40,10 @@ public abstract class LightingDevice implements ElectronicDevice {
         return brightness;
     }
 
+    public int getPower() {
+        return power;
+    }
+
     public void changeBrightness(double rate) {
         double changed = brightness + brightness * rate;
         setBrightness(changed);
