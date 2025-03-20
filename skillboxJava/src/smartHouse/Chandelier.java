@@ -7,9 +7,18 @@ public class Chandelier extends LightingDevice {
 
     private final int lampsCount;
 
+    private Controller controller;
+
+    private class Controller {
+        public void reset() {
+//            some logic
+        }
+    }
+
     public Chandelier(int power, int lampsCoutn) {
         super(power);
         this.lampsCount = lampsCoutn;
+        controller = new Controller();
     }
 
     @Override
