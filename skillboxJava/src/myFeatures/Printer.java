@@ -6,6 +6,7 @@ public class Printer {
     public static String getStringLessonNumber(int number) {
         return "For lesson " + number;
     }
+
     public static String getStringLessonNumber(int number, int module) {
         return "For lesson " + number + " (module " + module + ")";
     }
@@ -59,6 +60,8 @@ public class Printer {
     }
 
     public static void printSeparator() {
-        System.out.println(ANSI_RED + "---------------------------------------------------------------> "  + ANSI_RESET);
+        System.out.println();
+        System.out.println(ANSI_RED + "---------------------------------------------------------------> " + ANSI_RESET);
+        System.out.println();
     }
 }
