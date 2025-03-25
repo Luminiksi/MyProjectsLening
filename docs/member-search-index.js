@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"javadoc","c":"Calculator","l":"Calculator()","u":"%3Cinit%3E()"},{"p":"javadoc","c":"Calculator","l":"divide(double, double)","u":"divide(double,double)"},{"p":"javadoc","c":"Calculator","l":"OPERATION_COUNT"}];updateSearchResults();
