@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import org.controlsfx.control.StatusBar?>
+<VBox fx:id="root" alignment="CENTER" xmlns:fx="http://javafx.com/fxml" fx:controller="ru.otus.java.notepadefx.NotepadController">
+    <MenuBar>
+        <Menu text="Файл">
+            <MenuItem text="Создать" onAction="#menuFileNew" accelerator="ctrl+N"/>
+            <MenuItem text="Открыть" onAction="#menuFileOpen" accelerator="ctrl+O"/>
+            <MenuItem text="Сохранить" onAction="#menuFileSave" accelerator="ctrl+S"/>
+            <MenuItem text="Сохранить как..." onAction="#menuFileSaveAs"/>
+            <SeparatorMenuItem/>
+            <MenuItem text="Выйти" onAction="#menuFileExit"/>
+        </Menu>
+        <Menu text="Правка">
+            <MenuItem text="Отменить" onAction="#menuEditUndo"/>
+            <MenuItem text="Вернуть" onAction="#menuEditRedo"/>
+            <SeparatorMenuItem/>
+            <MenuItem text="Копировать" onAction="#menuEditCopy"/>
+            <MenuItem text="Вставить" onAction="#menuEditPaste"/>
+            <MenuItem text="Удалить" onAction="#menuEditDelete"/>
+
+        </Menu>
+        <Menu text="Формат">
+            <MenuItem text="Выбрать шрифт" onAction="#menuFormatSelectFont"/>
+        </Menu>
+        <Menu text="О программе">
+
+        </Menu>
+    </MenuBar>
+    <TextArea VBox.vgrow="ALWAYS" fx:id="content">
+        <font>
+            <Font name="Time New Roman" size="20.0"/>
+        </font>
+    </TextArea>
+    <StatusBar fx:id="statusBar"/>
+</VBox>
