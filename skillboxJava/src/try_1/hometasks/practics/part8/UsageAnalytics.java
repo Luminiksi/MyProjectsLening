@@ -1,0 +1,14 @@
+package try_1.hometasks.practics.part8;
+
+public class UsageAnalytics {
+    private int visitsCount;
+
+    public UsageAnalytics() {
+        visitsCount = 0;
+    }
+
+    public int countVisit() {
+        return ++visitsCount;
+    }
+
+}
