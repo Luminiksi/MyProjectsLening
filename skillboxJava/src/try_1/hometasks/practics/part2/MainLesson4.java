@@ -1,6 +1,5 @@
 package try_1.hometasks.practics.part2;
 
-import hometasks.practics.part2.lesson4.*;
 import try_1.hometasks.practics.part2.lesson4.Task1;
 import try_1.hometasks.practics.part2.lesson4.Task2;
 import try_1.hometasks.practics.part2.lesson4.Task3;

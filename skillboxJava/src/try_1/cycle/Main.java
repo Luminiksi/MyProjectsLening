@@ -1,6 +1,5 @@
 package try_1.cycle;
 
-import cycle.lessons.*;
 import try_1.cycle.lessons.*;
 
 public class Main {
