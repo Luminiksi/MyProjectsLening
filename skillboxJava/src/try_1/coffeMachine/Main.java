@@ -1,6 +1,5 @@
 package try_1.coffeMachine;
 
-import coffeMachine.lessons.*;
 import try_1.coffeMachine.lessons.Lesson4;
 import try_1.coffeMachine.lessons.Lesson5;
 import try_1.coffeMachine.lessons.Lesson6;
