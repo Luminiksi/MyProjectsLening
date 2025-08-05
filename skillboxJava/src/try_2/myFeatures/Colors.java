@@ -1,4 +1,4 @@
-package try_2.FillingStation.myFeatures;
+package try_2.myFeatures;
 
 public class Colors {
     public static final String ANSI_RESET = "\u001B[0m";

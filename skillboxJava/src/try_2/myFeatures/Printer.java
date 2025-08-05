@@ -1,4 +1,4 @@
-package try_2.FillingStation.myFeatures;
+package try_2.myFeatures;
 
 import static try_1.myFeatures.Colors.*;
 
