@@ -22,6 +22,7 @@ public class Lesson_2_3 {
         Printer.printTaskName("Задание 3. Напишите код с использованием операторов if, else и их комбинации");
         task3();
     }
+
     public static void task1() {
         int count = 50;
         System.out.println("Для count = " + count);
