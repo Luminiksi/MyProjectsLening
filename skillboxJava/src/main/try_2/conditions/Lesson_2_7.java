@@ -2,14 +2,14 @@ package main.try_2.conditions;
 
 import main.try_2.myFeatures.Printer;
 
-public class Lesson_2_6 {
+public class Lesson_2_7 {
     public static void run() {
         Printer.printLessonNumber(6, 2);
-        Printer.printTaskName("Вложенные условия");
+        Printer.printTaskName("Тернарный оператор");
         Printer.printDescription("Практика");
 
         Printer.printTaskNumber(1);
-        Printer.printTaskName("Задание 1. Упрощение кода с вложенными условиями");
+        Printer.printTaskName("Задание 1. Упрощение кода с помощью тернарного оператора");
         task1();
         System.out.println();
     }
@@ -42,6 +42,7 @@ public class Lesson_2_6 {
                 || (printRollerTemp > printRollerMinTemp && printRollerTemp < printRollerMaxTemp);
 
         boolean errors = false;
+
         if (!paperIsEnough || !inkIhsEnough) {
             errors = true;
             System.out.println("Бумаги или чернил недостаточно");
@@ -57,10 +58,6 @@ public class Lesson_2_6 {
             }
         }
 
-        if (!errors) {
-            return "Печать разрешена";
-        } else {
-            return "Печать запрещена";
-        }
+        return !errors ? "Печать разрешена" : "Печать запрещена";
     }
 }

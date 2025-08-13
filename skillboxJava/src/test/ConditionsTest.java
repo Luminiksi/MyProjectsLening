@@ -3,6 +3,7 @@ package test;
 
 import main.try_2.conditions.Lesson_2_5;
 import main.try_2.conditions.Lesson_2_6;
+import main.try_2.conditions.Lesson_2_7;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -119,7 +120,7 @@ public class ConditionsTest {
     }
 
     @Test
-    @DisplayName("Второй тест 2 5 1")
+    @DisplayName("Второй тест 2 6 1")
     void secondTest_2_6_1() {
         String actual = Lesson_2_6.checkTask1(530, 2001, false, 90);
         assertEquals(actual, FALSE);
@@ -157,6 +158,55 @@ public class ConditionsTest {
     @DisplayName("Седьмой тест 2 6 1")
     void seventhTest_2_6_1() {
         String actual = Lesson_2_6.checkTask1(530, 2000, false, 50);
+        assertEquals(actual, FALSE);
+    }
+
+    @Test
+    @DisplayName("Первый тест 2 7 1")
+    void firstTest_2_7_1() {
+        String actual = Lesson_2_7.checkTask1(530, 2000, false, 90);
+        assertEquals(actual, TRUE);
+    }
+
+    @Test
+    @DisplayName("Второй тест 2 7 1")
+    void secondTest_2_7_1() {
+        String actual = Lesson_2_7.checkTask1(530, 2001, false, 90);
+        assertEquals(actual, FALSE);
+    }
+
+    @Test
+    @DisplayName("Третий тест 2 7 1")
+    void thirdTest_2_7_1() {
+        String actual = Lesson_2_7.checkTask1(730, 2000, false, 90);
+        assertEquals(actual, FALSE);
+    }
+
+    @Test
+    @DisplayName("Четвертый тест 2 7 1")
+    void fourthTest_2_7_1() {
+        String actual = Lesson_2_7.checkTask1(530, 2000, true, 200);
+        assertEquals(actual, TRUE);
+    }
+
+    @Test
+    @DisplayName("Пятый тест 2 7 1")
+    void fifthTest_2_7_1() {
+        String actual = Lesson_2_7.checkTask1(530, 2000, true, 50);
+        assertEquals(actual, TRUE);
+    }
+
+    @Test
+    @DisplayName("Шестой тест 2 7 1")
+    void sixthTest_2_7_1() {
+        String actual = Lesson_2_7.checkTask1(530, 2000, false, 200);
+        assertEquals(actual, FALSE);
+    }
+
+    @Test
+    @DisplayName("Седьмой тест 2 7 1")
+    void seventhTest_2_7_1() {
+        String actual = Lesson_2_7.checkTask1(530, 2000, false, 50);
         assertEquals(actual, FALSE);
     }
 }
