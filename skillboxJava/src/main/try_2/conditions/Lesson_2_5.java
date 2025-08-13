@@ -4,7 +4,7 @@ import main.try_2.myFeatures.Printer;
 
 public class Lesson_2_5 {
     public static void run() {
-        Printer.printLessonNumber(4, 2);
+        Printer.printLessonNumber(5, 2);
         Printer.printTaskName("Приоритеты и скобки в условиях");
         Printer.printDescription("Практика");
 
@@ -26,7 +26,7 @@ public class Lesson_2_5 {
         boolean coldPrintingMode = false;
         double printRollerTemp = 90;
 
-        checkTask1(pagesInBook, booksCount, coldPrintingMode, printRollerTemp);
+        System.out.println(checkTask1(pagesInBook, booksCount, coldPrintingMode, printRollerTemp));
     }
 
     public static String checkTask1(int pagesInBook, int booksCount, boolean coldPrintingMode, double printRollerTemp) {
@@ -58,7 +58,7 @@ public class Lesson_2_5 {
         boolean coldPrintingMode = false;
         double printRollerTemp = 90;
 
-        checkTask2(pagesInBook, booksCount, coldPrintingMode, printRollerTemp);
+        System.out.println(checkTask2(pagesInBook, booksCount, coldPrintingMode, printRollerTemp));
 
     }
 
