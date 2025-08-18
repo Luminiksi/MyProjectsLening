@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class Lesson_3_3 {
     public static void run() {
         Printer.printLessonNumber(3, 3);
-        Printer.printLessonName("");
-        Printer.printDescription("Циклы “while” и “do while”");
+        Printer.printLessonName("Циклы “while” и “do while”");
+        Printer.printDescription("Из лекции");
         Printer.printTaskNumber(1);
         Printer.printTaskName("Цикл с помощью while");
         task1();
@@ -37,7 +37,7 @@ public class Lesson_3_3 {
     public static void task2() {
         int sum = 0;
 
-        for (int value = -1; value != 0;) {
+        for (int value = -1; value != 0; ) {
             value = new Scanner(System.in).nextInt();
             sum += value;
         }
