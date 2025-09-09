@@ -10,6 +10,8 @@ public class Main {
 //        System.out.println();
 //        Lesson_4_5.run();
 //        System.out.println();
-        Lesson_4_6.run();
+//        Lesson_4_6.run();
+//        System.out.println();
+        Lesson_4_7.run();
     }
 }
