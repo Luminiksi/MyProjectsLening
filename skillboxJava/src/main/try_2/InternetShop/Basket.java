@@ -3,9 +3,30 @@ package main.try_2.InternetShop;
 public class Basket {
     private String items = "";
     private int totalPrice = 0;
+    private int limit;
+
+    public Basket() {
+        items = "Список товаров:";
+        this.limit = 100000;
+    }
+
+    public Basket(int limit) {
+        this();
+        this.limit = limit;
+    }
+
+    public Basket(String items, int totalPrice) {
+        this();
+        this.items += items;
+        this.totalPrice = totalPrice;
+    }
 
     public void add(String name, int price) {
         if (contains(name)) {
+            return;
+        }
+
+        if (totalPrice + price >= limit) {
             return;
         }
 
