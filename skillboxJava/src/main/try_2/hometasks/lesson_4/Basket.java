@@ -6,11 +6,13 @@ public class Basket {
     private String items = "";
     private int totalPrice = 0;
     private int limit;
+    private double totalWeight;
 
     public Basket() {
         increaseCount(1);
         items = "Список товаров:";
         this.limit = 1000000;
+        totalWeight = 0;
     }
 
     public Basket(int limit) {
@@ -56,6 +58,11 @@ public class Basket {
         totalPrice = totalPrice + count * price;
     }
 
+    public void add(String name, int price, int count, double weight) {
+        totalWeight += weight;
+        add(name, price, count);
+    }
+
     public void clear() {
         items = "";
         totalPrice = 0;
@@ -63,6 +70,10 @@ public class Basket {
 
     public int getTotalPrice() {
         return totalPrice;
+    }
+
+    public double getTotalWeight() {
+        return totalWeight;
     }
 
     public boolean contains(String name) {
