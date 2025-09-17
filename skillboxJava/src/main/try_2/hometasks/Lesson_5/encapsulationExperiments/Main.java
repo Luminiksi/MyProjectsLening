@@ -2,18 +2,8 @@ package main.try_2.hometasks.Lesson_5.encapsulationExperiments;
 
 public class Main {
     public static void main(String[] args) {
-        ChildBankAccount account =
-                new ChildBankAccount(10000);
-        account.depositMoney(1000);
-        account.depositMoney(2000);
-        account.depositMoney(10000);
-        account.depositMoney(-1000);
-        System.out.println("Balance: " + account.getBalance());
-
-        account.debitMoney(500);
-        account.debitMoney(422.75);
-        account.debitMoney(50000);
-        account.debitMoney(-50);
-        System.out.println("Balance: " + account.getBalance());
+        Lesson_5_2.run();
+        System.out.println("");
+        Lesson_5_3.run();
     }
 }
