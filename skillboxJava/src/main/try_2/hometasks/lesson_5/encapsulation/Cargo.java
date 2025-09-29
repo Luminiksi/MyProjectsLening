@@ -1,7 +1,5 @@
 package main.try_2.hometasks.lesson_5.encapsulation;
 
-import javax.swing.*;
-
 public class Cargo {
     private final Dimensions dimensions;
     private final double weight;
