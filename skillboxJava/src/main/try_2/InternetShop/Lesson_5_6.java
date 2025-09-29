@@ -7,8 +7,8 @@ public class Lesson_5_6 {
         run();
     }
     public static void run() {
-        Printer.printLessonNumber(5, 5);
-        Printer.printLessonName("Immutable-классы");
+        Printer.printLessonNumber(6, 5);
+        Printer.printLessonName("Передача по ссылке или по значению");
 
         Printer.printTaskNumber(1);
         task1();
