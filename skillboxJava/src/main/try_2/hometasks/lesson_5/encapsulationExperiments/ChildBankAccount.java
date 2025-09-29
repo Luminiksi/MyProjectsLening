@@ -1,4 +1,4 @@
-package main.try_2.hometasks.Lesson_5.encapsulationExperiments;
+package main.try_2.hometasks.lesson_5.encapsulationExperiments;
 
 public class ChildBankAccount {
     private double balance;

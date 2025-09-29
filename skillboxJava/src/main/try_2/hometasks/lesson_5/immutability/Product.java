@@ -1,4 +1,4 @@
-package main.try_2.hometasks.Lesson_5.immutability;
+package main.try_2.hometasks.lesson_5.immutability;
 
 public class Product {
     private final String name;

@@ -1,4 +1,4 @@
-package main.try_2.hometasks.Lesson_5.immutability;
+package main.try_2.hometasks.lesson_5.immutability;
 
 import main.try_2.myFeatures.Printer;
 
