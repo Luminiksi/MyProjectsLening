@@ -7,11 +7,11 @@ public class Lesson_5_5 {
         Printer.printLessonNumber(5, 5);
         Printer.printLessonName("Immutable-классы");
 
-        Printer.getStringTaskNumber(1);
+        Printer.printTaskNumber(1);
         Printer.printTaskName("Модифицируйте класс и добавьте в него неизменяемое поле");
         task1();
         System.out.println();
-        Printer.getStringTaskNumber(2);
+        Printer.printTaskNumber(2);
         Printer.printTaskName("Создайте иммутабельный класс");
         task2();
     }

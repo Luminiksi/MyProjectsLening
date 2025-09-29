@@ -7,7 +7,7 @@ public class Lesson_5_2 {
         Printer.printLessonNumber(2, 5);
         Printer.printLessonName("Инкапсуляция");
 
-        Printer.getStringTaskNumber(1);
+        Printer.printTaskNumber(1);
         Printer.printTaskName("Напишите код класса с применением принципа инкапсуляции");
         task1();
     }

@@ -7,11 +7,11 @@ public class Lesson_5_3 {
         Printer.printLessonNumber(3, 5);
         Printer.printLessonName("POJO-классы, геттеры и сеттеры");
 
-        Printer.getStringTaskNumber(1);
+        Printer.printTaskNumber(1);
         Printer.printTaskName("Создайте класс для хранения данных о странах");
         task1();
         System.out.println();
-        Printer.getStringTaskNumber(2);
+        Printer.printTaskNumber(2);
         Printer.printTaskName("Создайте класс для хранения данных о любом объекте реального мира");
         task2();
     }
