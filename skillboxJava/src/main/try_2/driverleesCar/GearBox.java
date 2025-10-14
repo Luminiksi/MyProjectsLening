@@ -9,6 +9,16 @@ public class GearBox {
     public static final int MAX_GEAR = 6;
     public static final int MIN_GEAR = 1;
 
+    public final GearBoxType type;
+
+    public GearBox(GearBoxType type) {
+        this.type = type;
+    }
+
+    public GearBoxType getType() {
+        return type;
+    }
+
     private int gear = 0;
 
     public void shiftUp() {
