@@ -7,6 +7,26 @@ public class Basket {
 
     private static int count = 0;
 
+//    private static int timeout = 3600 * 24 * 7;
+    private static int timeout = getTimeout();
+
+/*  private static int timeout;
+    static  {
+        int secondsInHour = 3600;
+        int hoursInDay = 24;
+        int daysInWeek = 7;
+        int daysInMonth = 30;
+        timeout = secondsInHour * hoursInDay + daysInWeek * daysInMonth;
+    }*/
+
+    private static int getTimeout() {
+        int secondsInHour = 3600;
+        int hoursInDay = 24;
+        int daysInWeek = 7;
+        int daysInMonth = 30;
+        timeout = secondsInHour * hoursInDay + daysInWeek * daysInMonth;
+    }
+
     public Basket() {
         increaseCount(1);
         items = "Список товаров:";
