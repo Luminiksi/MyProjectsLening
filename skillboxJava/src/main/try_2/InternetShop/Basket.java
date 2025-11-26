@@ -24,7 +24,7 @@ public class Basket {
         int hoursInDay = 24;
         int daysInWeek = 7;
         int daysInMonth = 30;
-        timeout = secondsInHour * hoursInDay + daysInWeek * daysInMonth;
+        return secondsInHour * hoursInDay + daysInWeek * daysInMonth;
     }
 
     public Basket() {
