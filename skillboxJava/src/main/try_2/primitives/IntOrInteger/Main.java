@@ -2,7 +2,7 @@ package main.try_2.primitives.IntOrInteger;
 
 public class Main {
     public static void main(String[] args) {
-        Container container = new Container();
+        Container container = new Container(0);
         container.addCount(5672);
         System.out.println(container.getCount());
 
