@@ -3,10 +3,6 @@ package main.try_2.numbersAndDates;
 import main.try_2.myFeatures.Printer;
 
 public class Lesson_8_4 {
-    public static void main(String[] args) {
-        run();
-    }
-
     public static void run() {
         Printer.printLessonNumber(4, 8);
         Printer.printLessonName("Преобразование (приведение) чисел");
@@ -22,7 +18,6 @@ public class Lesson_8_4 {
         Printer.printTaskNumber(3);
         Printer.printTaskName("Ещё примеры преобразований");
         task3();
-        System.out.println();
     }
 
     public static void task1() {

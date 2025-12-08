@@ -39,7 +39,6 @@ public class Lesson_8_3 {
         Printer.printTaskNumber(8);
         Printer.printTaskName("Преинкремент");
         task8();
-        System.out.println();
     }
 
     public static void task1() {
