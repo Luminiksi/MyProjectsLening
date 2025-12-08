@@ -9,7 +9,6 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 import java.time.temporal.ChronoUnit;
 import java.util.Date;
-import java.util.Formatter;
 import java.util.Locale;
 
 public class Lesson_8_7 {

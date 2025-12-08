@@ -5,7 +5,6 @@ import main.try_2.myFeatures.Printer;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
-import java.util.Formatter;
 
 public class Lesson_8_7 {
     public static void main(String[] args) {
