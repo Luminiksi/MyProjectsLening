@@ -5,5 +5,7 @@ public class Main {
         Lesson_8_2.run();
         System.out.println();
         Lesson_8_3.run();
+        System.out.println();
+        Lesson_8_4.run();
     }
 }
