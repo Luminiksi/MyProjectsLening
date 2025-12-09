@@ -9,5 +9,7 @@ public class Main {
         Lesson_9_3.run();
         Printer.printSeparator();
         Lesson_9_4.run();
+        Printer.printSeparator();
+        Lesson_9_5.run();
     }
 }
