@@ -1,13 +1,13 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import practice.Birthdays;
+import practice.BirthdaysPart2;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 @DisplayName("Дни рождения")
-class BirthdaysTest {
+class BirthdaysTestPart2 {
 
     @Test
     @DisplayName("Введенная дата больше текущей")
@@ -79,7 +79,7 @@ class BirthdaysTest {
     }
 
     private void launch(int day, int month, int year, String exp) {
-        String act = Birthdays.collectBirthdays(year, month, day);
+        String act = BirthdaysPart2.collectBirthdays(year, month, day);
         Assertions.assertEquals(exp, replaceSeparatorToCurrentOs(act));
     }
 

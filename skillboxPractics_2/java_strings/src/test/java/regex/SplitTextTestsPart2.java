@@ -9,10 +9,10 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import practice.regex.SplitText;
+import practice.regex.SplitTextPart2;
 
 @DisplayName("Разбивка текста")
-class SplitTextTests {
+class SplitTextTestsPart2 {
 
   public static final String EMPTY_STRING = "";
 
@@ -21,7 +21,7 @@ class SplitTextTests {
   void splitText() throws IOException, URISyntaxException {
     String text = getText("/InputText.txt", " ");
     String expectedResult = getText("/Result.txt", System.lineSeparator());
-    String actualResult = SplitText.splitTextIntoWords(text)
+    String actualResult = SplitTextPart2.splitTextIntoWords(text)
             .replaceAll("\r", "")
             .replaceAll("\n", System.lineSeparator());
     assertEquals(expectedResult, actualResult);
@@ -30,7 +30,7 @@ class SplitTextTests {
   @Test
   @DisplayName("Пустая строка")
   void emptyString() {
-    String actualResult = SplitText.splitTextIntoWords(EMPTY_STRING);
+    String actualResult = SplitTextPart2.splitTextIntoWords(EMPTY_STRING);
     assertEquals(EMPTY_STRING, actualResult);
   }
 

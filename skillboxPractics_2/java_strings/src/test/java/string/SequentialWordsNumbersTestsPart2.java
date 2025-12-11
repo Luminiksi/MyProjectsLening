@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-import practice.string.SequentialWordsNumbers;
+import practice.string.SequentialWordsNumbersPart2;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @DisplayName("Вывод текста с порядковыми номера слов")
-class SequentialWordsNumbersTests {
+class SequentialWordsNumbersTestsPart2 {
 
     private static Stream<Arguments> strings() {
         return Stream.of(
@@ -39,7 +39,7 @@ class SequentialWordsNumbersTests {
     @MethodSource("strings")
     @DisplayName("Порядковый номер слов в строке")
     void sequentialWordsNumbersTest(String text, String expected) {
-        assertEquals(expected, SequentialWordsNumbers.sequentialWordsNumbers(text));
+        assertEquals(expected, SequentialWordsNumbersPart2.sequentialWordsNumbers(text));
     }
 
     @Test
@@ -47,7 +47,7 @@ class SequentialWordsNumbersTests {
     void checkRegularExpression() {
         final List<String> lines = new ArrayList<>();
         try {
-            Path path = Paths.get("src", "main", "java", "practice", "string", "SequentialWordsNumbers.java");
+            Path path = Paths.get("src", "main", "java", "practice", "string", "SequentialWordsNumbers2.java");
             lines.addAll(Files.readAllLines(path));
         } catch (IOException e) {
             e.printStackTrace();

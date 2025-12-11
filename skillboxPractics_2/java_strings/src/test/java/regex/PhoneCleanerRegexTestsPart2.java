@@ -20,10 +20,10 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import practice.regex.PhoneCleanerRegex;
+import practice.regex.PhoneCleanerRegexPart2;
 
 @DisplayName("Очистка номера и приведение к российскому формату")
-class PhoneCleanerRegexTests {
+class PhoneCleanerRegexTestsPart2 {
 
   /**
    * in/out streams to swap System in out
@@ -151,7 +151,7 @@ class PhoneCleanerRegexTests {
     provideInput(userInputMock);
     assertTimeoutPreemptively(
         Duration.ofSeconds(TEST_TIMEOUT_SECONDS),
-        () -> PhoneCleanerRegex.main(new String[0]));
+        () -> PhoneCleanerRegexPart2.main(new String[0]));
     assertEquals(expected.strip(), outContent.toString().strip(), message);
   }
 

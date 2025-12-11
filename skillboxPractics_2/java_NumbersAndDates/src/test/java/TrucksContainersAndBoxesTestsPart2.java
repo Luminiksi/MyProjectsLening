@@ -10,7 +10,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import practice.TrucksAndContainers;
+import practice.TrucksAndContainersPart2;
 
 /**
  * Тест рассчитан для конфигурации, когда в 1 контейнер помещается
@@ -18,7 +18,7 @@ import practice.TrucksAndContainers;
  */
 
 @DisplayName("Вывод количества грузовиков и контейнеров для перевозки указанного в консоли количества ящиков")
-class TrucksContainersAndBoxesTests {
+class TrucksContainersAndBoxesTestsPart2 {
 
     /**
      * in/out streams to swap System in out
@@ -536,7 +536,7 @@ class TrucksContainersAndBoxesTests {
         provideInput(userInputMock);
         assertTimeoutPreemptively(
                 Duration.ofSeconds(TEST_TIMEOUT_SECONDS),
-                () -> TrucksAndContainers.main(new String[0]));
+                () -> TrucksAndContainersPart2.main(new String[0]));
         assertEquals(
                 expected.strip(),
                 outContent

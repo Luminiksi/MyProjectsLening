@@ -2,7 +2,7 @@ package practice;
 
 import java.util.Scanner;
 
-public class TrucksAndContainers {
+public class TrucksAndContainersPart2 {
 
     public static final int MAX_BOXES_IN_CONTAINER = 27;
     public static final int MAX_CONTAINERS_IN_TRUCK = 12;
