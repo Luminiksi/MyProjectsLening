@@ -36,6 +36,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return STR."Student{name='\{name}', age=\{age}}";
+        return String.format("Student{name='\\{%s}', age=\\{%d}}", name, age);
     }
 }

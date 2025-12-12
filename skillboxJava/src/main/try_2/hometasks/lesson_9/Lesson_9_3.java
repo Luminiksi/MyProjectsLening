@@ -38,10 +38,10 @@ public class Lesson_9_3 {
         int a = Integer.parseInt(value1);
         int b = Integer.parseInt(value2);
         String result = switch (operation) {
-            case "+" -> STR."\{a} + \{b} = \{a + b}";
-            case "-" -> STR."\{a} - \{b} = \{a - b}";
-            case "*" -> STR."\{a} * \{b} = \{a * b}";
-            case "/" -> STR."\{a} / \{b} = \{a / b}";
+            case "+" -> String.format("%d + %d = %d", a, b, a + b);
+            case "-" -> String.format("%d - %d = %d", a, b, a - b);
+            case "*" -> String.format("%d * %d = %d", a, b, a * b);
+            case "/" -> String.format("%d * %d = %d", a, b, a / b);
             default -> "Неизвестная операция...";
         };
         return result;
