@@ -6,5 +6,6 @@ public class Main {
     public static void main(String[] args) {
         Lesson_10_2.run();
         Printer.printSeparator();
+        Lesson_10_3.run();
     }
 }
