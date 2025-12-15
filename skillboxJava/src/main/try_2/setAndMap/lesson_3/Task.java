@@ -1,11 +1,13 @@
-package main.try_2.setAndMap;
+package main.try_2.setAndMap.lesson_3;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Task {
     private String name;
     private final LocalDate time;
     private boolean isDone;
+    private static int equalsCount = 0;
 
     public Task(String name) {
         this.name = name;
@@ -30,6 +32,24 @@ public class Task {
 
     public void setDone(boolean done) {
         isDone = done;
+    }
+
+    public static int getEqualsCount() {
+        return equalsCount;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        equalsCount++;
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Task task = (Task) o;
+        return isDone == task.isDone && Objects.equals(name.toLowerCase(), task.name.toLowerCase());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name.toLowerCase(), isDone);
     }
 
     @Override

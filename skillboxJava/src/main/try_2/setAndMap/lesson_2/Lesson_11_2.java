@@ -1,4 +1,4 @@
-package main.try_2.setAndMap;
+package main.try_2.setAndMap.lesson_2;
 
 import main.try_2.myFeatures.Printer;
 
