@@ -1,7 +1,10 @@
+import practice.EmailList;
+
 import java.util.Scanner;
 
 public class Main {
     public static final String WRONG_EMAIL_ANSWER = "Неверный формат email";
+    private static EmailList list = new EmailList();
 
     /* TODO:
         Пример вывода списка Email, после ввода команды LIST в консоль:
@@ -27,7 +30,24 @@ public class Main {
             }
 
             //TODO: write code here
-
+            if (input.toLowerCase().equals("list")) {
+                for (String list : list.getSortedEmails()) {
+                    System.out.println(list);
+                }
+            } else {
+                input = input.trim();
+                int index = input.indexOf(' ');
+                if (index < 0) {
+                    System.out.println("Не верная комманда");
+                    continue;
+                }
+                String command = input.substring(0, index);
+                if (command.toLowerCase().equals("add")) {
+                    list.add(input.substring(index + 1));
+                } else {
+                    System.out.println("Не верная комманда");
+                }
+            }
         }
     }
 }
