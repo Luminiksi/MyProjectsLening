@@ -55,4 +55,8 @@ public abstract class LightingDevice implements ElectricDevice, Comparable {
     public String toString() {
         return getClass().getName() + " with power " + power;
     }
+
+    public int getPower() {
+        return power;
+    }
 }
