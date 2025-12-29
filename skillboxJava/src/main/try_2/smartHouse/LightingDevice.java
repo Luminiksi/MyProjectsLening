@@ -1,6 +1,6 @@
 package main.try_2.smartHouse;
 
-public abstract class LightingDevice implements ElectricDevice {
+public abstract class LightingDevice implements ElectricDevice, Comparable {
     protected static final double MAX_BRIGHTNESS = 1D;
     protected static final double MIN_BRIGHTNESS = 0D;
 
@@ -43,5 +43,16 @@ public abstract class LightingDevice implements ElectricDevice {
     @Override
     public boolean isSwitchedOn() {
         return brightness > 0;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        LightingDevice device = (LightingDevice) o;
+        return Integer.compare(power, device.power);
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getName() + " with power " + power;
     }
 }
