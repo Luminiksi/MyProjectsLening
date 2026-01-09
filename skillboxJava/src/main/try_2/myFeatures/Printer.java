@@ -64,4 +64,10 @@ public class Printer {
         System.out.println(ANSI_RED + "---------------------------------------------------------------> " + ANSI_RESET);
         System.out.println();
     }
+
+    public static void printError(String error) {
+        System.out.println();
+        System.out.println(ANSI_RED + error + ANSI_RESET);
+        System.out.println();
+    }
 }
