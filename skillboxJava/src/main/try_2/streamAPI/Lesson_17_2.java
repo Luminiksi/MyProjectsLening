@@ -22,7 +22,6 @@ public class Lesson_17_2 {
         Printer.printTaskName("Цикл со счетчиком - 10");
         task2();
         System.out.println();
-
     }
 
     public static void task1() {
