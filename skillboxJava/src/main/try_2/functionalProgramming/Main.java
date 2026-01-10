@@ -1,6 +1,7 @@
 package main.try_2.functionalProgramming;
 
 import main.try_2.functionalProgramming.lesson_16_5.Lesson_16_5;
+import main.try_2.functionalProgramming.lesson_16_7.Lesson_16_7;
 import main.try_2.myFeatures.Printer;
 
 public class Main {
@@ -10,5 +11,7 @@ public class Main {
         Lesson_16_4.run();
         Printer.printSeparator();
         Lesson_16_5.run();
+        Printer.printSeparator();
+        Lesson_16_7.run();
     }
 }
